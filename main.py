@@ -3,12 +3,12 @@ from app import create_app, db
 
 app = create_app()
 
-# Ensure the tables are created when the app starts
+# Ensure tables are created at startup
 with app.app_context():
     db.create_all()
     print("Database tables created successfully!")
 
-# Use the PORT assigned by Render
+# Use the Render-assigned port
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
