@@ -69,6 +69,7 @@ Sample Response:
 {
     "result": [1, 2, 3, 4, 5, 6, 7, 9]
 }
+
 3. ## Breadth First Search (BFS)
 Endpoint: /bfs
 Method: POST
