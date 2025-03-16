@@ -69,6 +69,8 @@ Sample Response:
 {
     "result": [1, 2, 3, 4, 5, 6, 7, 9]
 }
+
+
 3. ## Breadth First Search (BFS)
 Endpoint: /bfs
 Method: POST
@@ -99,7 +101,7 @@ Sample Response:
         {
             "id": 1,
             "algorithm_name": "Binary Search",
-            "input_data": "{'array': [1, 2, 3, 4, 5], 'target': 3}",
+            "input_data": "{'array': [1, 2, 3, 4], 'target': 3}",
             "output_data": "2",
             "timestamp": "2025-03-16 12:00:00"
         }
