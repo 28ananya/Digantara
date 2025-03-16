@@ -5,9 +5,8 @@ services:
     plan: free
     buildCommand: |
       pip install -r requirements.txt
-      python setup_db.py
     startCommand: |
-      gunicorn run:app
+      python setup_db.py && gunicorn main:app
     envVars:
       - key: FLASK_ENV
         value: production
